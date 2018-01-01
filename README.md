@@ -2,8 +2,8 @@
 
 ## Objetivo 
   Estudar o método de Expressão Lambda e API de Data e Hora do java8.<br>
-  Poriço foi desenvolvido um projeto simples de Locação de filmes,<br>
-  a onde é possivel listar os filmes cadastrados e fazer a locações de filmes existentes usando as funcionalidades novas do java8.
+  Poriço foi desenvolvido um projeto simples de Locação de filmes,a onde é possivel <br>
+  listar os filmes cadastrados e fazer a locações de filmes existentes usando as funcionalidades novas do java8.
 
 ## API de datas (JSR 310)
    São várias classes e interfaces:
@@ -11,14 +11,13 @@
    - java.time.LocalDate
    - java.time.LocalTime
 
-
 ## Sintaxe Lambda
   Exemplo:
 	
-  List<fatura> faturaVencidas = new FaturaDao().buscarFaturasVencidas();	
+  	List<fatura> faturaVencidas = new FaturaDao().buscarFaturasVencidas();	
 
-  1. O “f”, em Fatura f, recebe cada elemento da lista. Entre as chaves é onde vou colocar o código que quero executar, no nosso caso utilizar o <br>
-      objeto para enviar o e-mail. Ficando assim:<br>
+  1. O “f”, em Fatura f, recebe cada elemento da lista. Entre as chaves é onde vou colocar o código que quero executar,<br>
+  no nosso caso utilizar o objeto para enviar o e-mail. Ficando assim:<br>
 
 	faturasVencidas.forEach((Fatura f) -> {
 	  enviadorEmail.enviar(f.getEmailDevedor(), f.resumo());
@@ -38,10 +37,10 @@
 
   4. Se você tivesse que executar algum outro código e não somente uma linha.
       Poderia deixar o código como abaixo:
-
-       faturasVencidas.forEach(f -> {
-         enviadorEmail.enviar(f.getEmailDevedor(), f.resumo());
-         f.setNotificacaoEnviada(true);
+      
+       	faturasVencidas.forEach(f -> {
+          enviadorEmail.enviar(f.getEmailDevedor(), f.resumo());
+          f.setNotificacaoEnviada(true);
 	});
 
 ## Como testar ?
