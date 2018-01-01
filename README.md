@@ -35,16 +35,13 @@
 
 	faturasVencidas.forEach(f -> enviadorEmail.enviar(f.getEmailDevedor(), f.resumo()));
 
-  4. Se você tivesse que executar algum outro código e não somente uma linha.
+  4. Se você tivesse que executar algum outro código e não somente uma linha.<br>
       Poderia deixar o código como abaixo:
       
        	faturasVencidas.forEach(f -> {
           enviadorEmail.enviar(f.getEmailDevedor(), f.resumo());
           f.setNotificacaoEnviada(true);
-	});
-	
-  5. 	
-
+	});	  	
 	
 ## Como testar ?
   1. Clone o repositório.
