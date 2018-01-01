@@ -42,7 +42,10 @@
           enviadorEmail.enviar(f.getEmailDevedor(), f.resumo());
           f.setNotificacaoEnviada(true);
 	});
+	
+  5. 	
 
+	
 ## Como testar ?
   1. Clone o repositório.
   2. Importe para o eclipse.
